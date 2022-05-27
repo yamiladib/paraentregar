@@ -3,14 +3,18 @@ let rotulo1 = document.getElementById("rotulo1");
 let rotulo2 = document.getElementById("rotulo2");
 
 let btnEnv = document.getElementById("btnEnviar");
+let dato = document.getElementById("dato");
 let dato1 = document.getElementById("dato1");
 let dato2 = document.getElementById("dato2");
-let dato3 = document.getElementById("dato3");
+
+rotulo1.innerHTML = ("Ingrese numero 1");
+rotulo2.innerHTML = ("Ingrese numero 2");
+rotulo3.innerHTML = ("Ingrese numero 3");
 
 btnEnviar.addEventListener("click", () => {
-  let numero1: number = dato1.value ;
-  let numero2: number = dato2.value ;
-  let numero3: number = dato3.value; 
+  let numero1:number=Number(dato.value);
+  let numero2:number=Number(dato1.value);
+  let numero3:number=Number(dato2.value); 
    
   if (numero1 > numero2 && numero1>numero3){
     console.log ("el numero1 numero es el mayor");  
@@ -21,6 +25,3 @@ btnEnviar.addEventListener("click", () => {
   
   }
 });
-rotulo1.innerHTML = "Ingrese1ernumero";
-rotulo2.innerHTML = "Ingrese2donumero";
-rotulo3.innerHTML = "Ingrese3ernumero";
