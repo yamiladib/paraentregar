@@ -43,3 +43,16 @@ resultadoTotal = multiplicarArreglo(resultado1, resultado2, dimension);
 console.log(
   "La multiplicación de los 4 arreglos es : [ " + resultadoTotal + "]"
 );
+
+/*<html>
+<head>
+<title>Parcel Sandbox</title>
+<meta charset="UTF-8" />
+</head>
+
+<body>
+<div id="app"></div>
+
+<script src="src/index.ts"></script>
+</body>
+</html>*/
