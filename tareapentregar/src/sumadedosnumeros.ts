@@ -11,10 +11,22 @@ rotulo2.innerHTML = "Ingrese el segundo numero";
 btnEnv.addEventListener("click", () => {
   let num1: number = Number(dato1.value);
   let num2: number = Number(dato2.value);
-  let resultado: number = num1 + num2;
-  console.log("el resultado de la suma es" + resultado);
-});
-
+  
+  let numeroNuevo, suma, aux:number;
+  numeroNuevo= num1;
+  
+    if (num1>num2){
+      aux= num1
+      num1=num2
+      num2=aux
+    }
+    suma=0;
+    for (let numeroNuevo:number=num1;numeroNuevo<=num2;numeroNuevo++){ 
+    suma=numeroNuevo+suma 
+     console.log("el resultado de la suma es" + suma);
+  });
+  
+  
 /*<html>
   <head>
     <title>suma de dos numeros</title>

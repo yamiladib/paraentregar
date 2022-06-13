@@ -1,21 +1,12 @@
-no funciona aun
 //paroimpar
-let dato1 = document.getElementById("dato1");
-let rotulo1 = document.getElementById("rotulo1");
-
-rotulo1.innerHTML = "Ingrese numero:";
-
-let btnEnv = document.getElementById("btnEnviar");
-
-btnEnv.addEventListener("click", () => {
-  let numero:number= Number(dato1.value);
-  if (numero===0) {
-    console.log("el" + numero + "no es ni par ni impar");
-  } else if (numero%2!0) {
-    console.log("el" + numero + "es impar");
-  } else if (numero%2=== 0) {
-    console.log("el" + numero + "es par");
-  }
+let nIngresado: number = Number(prompt("ingrese un numero"));
+while (nIngresado <= 0) {
+  nIngresado = Number(promp("ingrese un numero mayor a 0:"));
+}
+if (nIngresado %2===0){
+console.log("el numero"+ nIngresado+ "es par");
+}else{ 
+console.log("el numero" + nIngresado + "es impar")
 });
 
 
